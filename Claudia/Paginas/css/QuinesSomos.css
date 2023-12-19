@@ -1,0 +1,106 @@
+.fondo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 30rem;
+    margin-bottom: 5.98rem;
+}
+
+
+  
+.fondo::before {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 110%;
+    background-image: url("../img/fondo3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.5);
+    z-index: -1;
+}
+  
+.text {
+    text-align: justify;
+    color: white;
+    font-size: 2rem;
+    z-index: 1;
+}
+
+span{
+    color: rgb(69, 50, 27);
+    margin-left: 20px;
+}
+
+.intro {
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin-left: 40px; /* Ajusta el margen izquierdo según sea necesario */
+    margin-right: 20px; /* Ajusta el margen derecho según sea necesario */
+}
+
+.intro {
+    text-align: left;
+    margin-left: 60px;
+    margin-right: 60px;
+    background-color: rgba(36, 22, 22, 0.2); /* Color de fondo casi transparente */
+    padding: 15px; /* Espacio interno dentro del rectángulo */
+    border-radius: 10px; /* Borde redondeado */
+    margin-bottom: 20px; /* Espacio entre los rectángulos */
+
+
+.contenedor-slider {
+    height: 30rem;
+    overflow: hidden;
+    max-width: 100rem;
+    display: flex;
+    margin: 4rem auto; /* Centrar el contenedor y agregar márgenes */
+  }
+  
+  .slider {
+    display: flex;
+    animation: slide 20s linear infinite;
+  }
+  
+  .slider img {
+    margin-right: 2rem;
+  }
+  
+  @keyframes slide {
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+
+
+/* Estilos del pie de página (footer) */
+footer {
+    background-color: #333; /* Color de fondo del pie de página */
+    color: #fff; /* Color de texto del pie de página */
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Estilos de la sección de iconos en el footer */
+  .footer1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ocupar el 100% del alto disponible */
+  }
+  
+  /* Estilos de los enlaces de los iconos */
+  .footer1 a {
+    color: #fff; /* Color de los iconos */
+    font-size: 24px; /* Tamaño de fuente de los iconos */
+    margin: 0 15px; /* Espacio entre los iconos */
+    text-decoration: none;
+  }
+  
+  /* Añadir un hover para resaltar los iconos al pasar el ratón sobre ellos */
+  .footer1 a:hover {
+    color: #ffcc00; /* Color de resaltado al pasar el ratón */
+  }
+  
